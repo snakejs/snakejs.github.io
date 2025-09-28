@@ -44,8 +44,6 @@ You can play the latest version live here: **[snakejs.github.io](https://snakejs
  index.html       # The main HTML file
 ```
 
-*(Adjust the structure above to match your actual project files)*
-
 ## 💻 Technologies Used
 
   * **HTML5** for structure and the Canvas API
