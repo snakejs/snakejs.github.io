@@ -31,8 +31,6 @@ That’s it\! No build tools or server required.
 
 You can play the latest version live here: **[snakejs.github.io](https://snakejs.github.io)**
 
-*(Replace the link above with your actual GitHub Pages or other hosting URL)*
-
 ## 🕹️ How to Play
 
   * Use the **Arrow Keys** to control the **Snake**.
