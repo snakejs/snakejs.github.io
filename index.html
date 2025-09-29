@@ -1043,6 +1043,10 @@ Copyright (c) 2025 Valentyn Kolesnikov <0009-0003-9608-3364@orcid.org>
                             this.totalScore = dialog.totalScore;
                             this.currentLevelStart = dialog.currentLevelStart;
                             this.totalScoreAtLevelStart = dialog.totalScoreAtLevelStart;
+
+                            this.loadLevel(this.level, false);
+                            this.updateDisplay();
+                            this.updateBestScore();
                             
                             // Show the game over modal
                             this.showModal('Game Over!', `Level ${this.level} Score: ${this.levelScore}<br>Total Score: ${this.totalScore}`, true);
