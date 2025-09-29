@@ -1036,8 +1036,8 @@ Copyright (c) 2025 Valentyn Kolesnikov <0009-0003-9608-3364@orcid.org>
                 if (savedDialog) {
                     try {
                         const dialog = JSON.parse(savedDialog);
-                        // Check if dialog was saved within last 24 hours
-                        if (Date.now() - dialog.timestamp < 3600000 * 24) {
+                        // Check if dialog was saved within last 100 days
+                        if (Date.now() - dialog.timestamp < 3600000 * 24 * 100) {
                             this.level = dialog.level;
                             this.levelScore = dialog.levelScore;
                             this.totalScore = dialog.totalScore;
