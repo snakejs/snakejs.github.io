@@ -2289,7 +2289,9 @@ Copyright (c) 2025 Valentyn Kolesnikov <0009-0003-9608-3364@orcid.org>
                     (newObstacle.x >= 10 && newObstacle.x <= 14 && 
                      newObstacle.y >= 10 && newObstacle.y <= 14) ||
                     this.isInCorner(newObstacle.x, newObstacle.y) ||
-                    (this.obstacles && this.obstacles.some(obs => obs.x === newObstacle.x && obs.y === newObstacle.y))
+                    (this.obstacles && this.obstacles.some(obs => obs.x === newObstacle.x && obs.y === newObstacle.y)) ||
+                    (this.snake && this.snake.some(seg => seg.x === newObstacle.x && seg.y === newObstacle.y)) ||
+                    (this.food && this.food.x === newObstacle.x && this.food.y === newObstacle.y)
                 );
                 
                 return newObstacle;
