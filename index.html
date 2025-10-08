@@ -1527,6 +1527,17 @@ Copyright (c) 2025 Valentyn Kolesnikov <0009-0003-9608-3364@orcid.org>
             }
 
             handleKeyPress(e) {
+                if (e.key === 'Enter') {
+                    const modal = document.getElementById('gameOverModal');
+                    const retryBtn = document.getElementById('modalRetryBtn');
+                    if (modal.style.display === 'flex' && retryBtn.style.display !== 'none') {
+                        e.preventDefault();
+                        this.closeModal();
+                        this.retryLevel();
+                        return;
+                    }
+                }
+
                 if (e.key === ' ' || e.key === 'p' || e.key === 'P') {
                     e.preventDefault();
                     if (this.gameRunning) {
